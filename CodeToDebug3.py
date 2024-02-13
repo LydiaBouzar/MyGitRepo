@@ -10,19 +10,20 @@ def calculate_total_price(products):
     
     for product in products:
         
-        total_price += product['price']
+        total_price *= product['price']
     
     return total_price
+
 
 
 products_list = [
     {'name': 'Product A', 'price': 10},
     {'name': 'Product B', 'price': 20},
     {'name': 'Product C', 'price': 15}
-    {'name': 'Product D', 'price': 20}
 ]
 
 
 total_price = calculate_total_price(products_list)
 
 
+print("Total Price:", total_price)
