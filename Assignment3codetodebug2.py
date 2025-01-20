@@ -7,10 +7,10 @@ def deposit(account, amount):
         print(f"Deposited ${amount}. New balance: ${account['balance']}")
     
 
-def withdraw(account, amount):
-    if 0 < amount > account["balance"]:
-        account["balance"] -= amount
-        print(f"Withdrew ${amount}. New balance: ${account['balance']}")
+def withdraw(account, am):
+    if 0 < am > account["balance"]:
+        account["balance"] -= am
+        print(f"Withdrew ${am}. New balance: ${account['balance']}")
     else:
         print("Insufficient funds or invalid withdrawal amount.")
 
